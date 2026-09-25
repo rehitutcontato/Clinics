@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #09090b;
+    color: #f4f4f5;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Luxury Champagne & Bronze Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF6E0 0%, #E6C98F 45%, #C29B53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-champagne-subtle {
+  color: #E2D4BC;
+}
+
+.bg-gold-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(203, 162, 88, 0.12) 0%, rgba(9, 9, 11, 0) 70%);
+}
+
+.bg-gold-glow-subtle {
+  background: radial-gradient(circle at 50% 0%, rgba(203, 162, 88, 0.08) 0%, rgba(9, 9, 11, 0) 65%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(203, 162, 88, 0.22);
+}
+
+.border-gold-hover:hover {
+  border-color: rgba(203, 162, 88, 0.45);
+}
+
+/* Glassmorphism Luxury Backdrop */
+.glass-header {
+  background: rgba(9, 9, 11, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(24, 24, 27, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom discreet scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
